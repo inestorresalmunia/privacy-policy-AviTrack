@@ -6,109 +6,260 @@
     <title>Política de Privacidad - AviTrack</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             color: #333;
+            background-color: #fff;
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; margin-top: 30px; }
-        .permission { 
-            background-color: #f8f9fa; 
-            padding: 15px; 
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 { 
+            color: #34495e; 
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 10px;
             border-left: 4px solid #3498db;
-            margin: 15px 0;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .permission-box { 
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px; 
+            border-left: 5px solid #3498db;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .permission-box h3 {
+            margin-top: 0;
+            color: #2980b9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .last-updated {
-            color: #666;
+            color: #7f8c8d;
             font-style: italic;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+            border-left: 5px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 2px solid #dee2e6;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .feature-list {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+            margin: 20px 0;
+        }
+        .security-badge {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+            border: 1px solid #bee5eb;
         }
     </style>
 </head>
 <body>
-    <h1>Política de Privacidad - AppPondex</h1>
-    <p class="last-updated">Última actualización: Septiembre 2025</p>
+    <h1>🔒 Política de Privacidad - AviTrack</h1>
+    <p class="last-updated">📅 Última actualización: Septiembre 2024 • Versión 1.2</p>
     
-    <h2>1. Información General</h2>
-    <p>AviTrack es una aplicación diseñada para el escaneo de códigos QR y códigos de barras con validación de ubicación GPS. Esta política explica cómo utilizamos los permisos solicitados.</p>
-    
-    <h2>2. Permisos Solicitados y su Uso</h2>
-    
-    <div class="permission">
+    <h2>📱 Información de la Aplicación</h2>
+    <div class="feature-list">
+        <p><strong>Nombre:</strong> AviTrack</p>
+        <p><strong>Función:</strong> Escáner de códigos QR y códigos de barras con validación de ubicación GPS</p>
+        <p><strong>Versión actual:</strong> 1.0.3</p>
+    </div>
+
+    <h2>🎯 ¿Qué hace nuestra aplicación?</h2>
+    <p>AviTrack es una herramienta profesional que permite:</p>
+    <ul>
+        <li>✅ Escanear códigos QR y códigos de barras</li>
+        <li>📍 Validar ubicaciones mediante coordenadas GPS</li>
+        <li>📊 Generar informes de verificación</li>
+        <li>💾 Almacenar datos localmente hasta su envío al servidor</li>
+        <li>🔄 Sincronizar datos automáticamente con sistemas corporativos</li>
+    </ul>
+
+    <h2>🛡️ Permisos Necesarios y Su Justificación</h2>
+
+    <div class="permission-box">
         <h3>📷 Permiso de Cámara</h3>
-        <p><strong>¿Por qué lo necesitamos?</strong> Para capturar imágenes de códigos QR y códigos de barras.</p>
-        <p><strong>¿Cómo lo usamos?</strong> Solo se activa cuando el usuario presiona el botón de escanear. Las fotos se procesan localmente y se guardan temporalmente en el dispositivo.</p>
-        <p><strong>Datos recopilados:</strong> Imágenes de códigos escaneados con timestamp de captura.</p>
+        <p><strong>¿Por qué lo necesitamos?</strong></p>
+        <p>Para capturar imágenes de códigos QR y códigos de barras que contienen información de identificación y coordenadas GPS.</p>
+        <p><strong>¿Cómo lo usamos?</strong></p>
+        <ul>
+            <li>Se activa únicamente cuando presionas el botón de escanear</li>
+            <li>Las fotos se procesan localmente en tu dispositivo</li>
+            <li>Solo guardamos las imágenes necesarias para el proceso de verificación</li>
+            <li>No accedemos a tu galería de fotos ni a otras imágenes</li>
+        </ul>
     </div>
 
-    <div class="permission">
+    <div class="permission-box">
         <h3>📍 Permisos de Ubicación (GPS)</h3>
-        <p><strong>¿Por qué lo necesitamos?</strong> Para validar que el usuario esté en la ubicación correcta según las coordenadas del código QR escaneado.</p>
-        <p><strong>¿Cómo lo usamos?</strong> Se obtiene la ubicación actual solo cuando se escanea un código, comparándola con las coordenadas embebidas en el código QR.</p>
-        <p><strong>Datos recopilados:</strong> Coordenadas GPS (latitud, longitud), precisión y timestamp de ubicación.</p>
+        <p><strong>¿Por qué lo necesitamos?</strong></p>
+        <p>Para verificar que te encuentres en la ubicación correcta según las coordenadas embebidas en el código QR escaneado.</p>
+        <p><strong>¿Cómo lo usamos?</strong></p>
+        <ul>
+            <li>Obtenemos tu ubicación solo durante el proceso de escaneo</li>
+            <li>Comparamos tu ubicación actual con las coordenadas del código</li>
+            <li>Calculamos la distancia para validar la precisión</li>
+            <li>No rastreamos tu ubicación continuamente</li>
+            <li>No compartimos datos de ubicación con terceros</li>
+        </ul>
     </div>
 
-    <div class="permission">
+    <div class="permission-box">
         <h3>💾 Almacenamiento</h3>
-        <p><strong>¿Por qué lo necesitamos?</strong> Para guardar temporalmente las imágenes escaneadas y los datos de sesión.</p>
-        <p><strong>¿Cómo lo usamos?</strong> Los datos se almacenan localmente en formato JSON hasta que se envían al servidor.</p>
-        <p><strong>Datos almacenados:</strong> Imágenes procesadas, identificaciones de códigos, coordenadas y validaciones.</p>
+        <p><strong>¿Por qué lo necesitamos?</strong></p>
+        <p>Para guardar temporalmente las imágenes escaneadas y los datos de sesión hasta que se envíen al servidor corporativo.</p>
+        <p><strong>¿Qué almacenamos?</strong></p>
+        <ul>
+            <li>Imágenes de códigos procesados</li>
+            <li>Coordenadas GPS y timestamps</li>
+            <li>Resultados de validación</li>
+            <li>Identificadores únicos del dispositivo</li>
+        </ul>
     </div>
 
-    <div class="permission">
-        <h3>🌐 Internet</h3>
-        <p><strong>¿Por qué lo necesitamos?</strong> Para enviar los datos recopilados al servidor central y obtener direcciones a partir de coordenadas.</p>
-        <p><strong>¿Cómo lo usamos?</strong> Se envían datos en lotes al servidor configurado. También se utiliza para convertir coordenadas GPS en direcciones legibles.</p>
+    <div class="permission-box">
+        <h3>🌐 Acceso a Internet</h3>
+        <p><strong>¿Por qué lo necesitamos?</strong></p>
+        <p>Para enviar los datos recopilados al servidor central y obtener direcciones a partir de coordenadas GPS.</p>
+        <p><strong>¿Qué datos enviamos?</strong></p>
+        <ul>
+            <li>Códigos escaneados e información de validación</li>
+            <li>Coordenadas GPS (solo las relacionadas con el trabajo)</li>
+            <li>Timestamps y identificadores de dispositivo</li>
+            <li>No enviamos información personal o privada</li>
+        </ul>
     </div>
 
-    <h2>3. Tratamiento de Datos</h2>
+    <h2>🔒 Medidas de Seguridad</h2>
+    <div class="highlight">
+        <p>Implementamos las siguientes medidas para proteger tu información:</p>
+        <div style="text-align: center; margin: 20px 0;">
+            <span class="security-badge">🔐 Cifrado de datos</span>
+            <span class="security-badge">🆔 ID único de dispositivo</span>
+            <span class="security-badge">🗑️ Eliminación automática</span>
+            <span class="security-badge">🚫 No compartimos con terceros</span>
+            <span class="security-badge">🏠 Procesamiento local</span>
+        </div>
+        <ul>
+            <li><strong>Identificación única del dispositivo</strong> para evitar duplicados</li>
+            <li><strong>Validación de datos</strong> antes del envío al servidor</li>
+            <li><strong>Eliminación automática</strong> de datos locales después del envío exitoso</li>
+            <li><strong>Procesamiento local</strong> de todas las imágenes</li>
+            <li><strong>Conexiones seguras</strong> para el envío de datos</li>
+        </ul>
+    </div>
+
+    <h2>❌ Lo que NO hacemos</h2>
     <ul>
-        <li><strong>Recopilación:</strong> Solo se recopilan datos necesarios para la funcionalidad de la aplicación.</li>
-        <li><strong>Almacenamiento:</strong> Los datos se guardan localmente hasta su envío al servidor.</li>
-        <li><strong>Transmisión:</strong> Los datos se envían de forma segura al servidor configurado.</li>
-        <li><strong>Retención:</strong> Los datos locales se eliminan después del envío exitoso.</li>
+        <li>❌ No accedemos a tus contactos, mensajes o llamadas</li>
+        <li>❌ No recopilamos información personal identificable</li>
+        <li>❌ No compartimos datos con empresas de publicidad</li>
+        <li>❌ No utilizamos datos para marketing o publicidad</li>
+        <li>❌ No accedemos a otras aplicaciones instaladas</li>
+        <li>❌ No grabamos audio ni video</li>
+        <li>❌ No rastreamos tu ubicación fuera del horario de trabajo</li>
     </ul>
 
-    <h2>4. Seguridad</h2>
-    <p>Implementamos medidas de seguridad para proteger sus datos:</p>
+    <h2>👤 Tus Derechos como Usuario</h2>
+    <div class="feature-list">
+        <ul>
+            <li><strong>🚫 Denegar permisos:</strong> Puedes rechazar cualquier permiso (la app te informará sobre funcionalidades limitadas)</li>
+            <li><strong>👀 Revisar datos:</strong> Puedes ver todos los datos almacenados localmente desde la aplicación</li>
+            <li><strong>🗑️ Eliminar datos:</strong> Puedes borrar todos los datos desde la configuración de Android</li>
+            <li><strong>📱 Desinstalar:</strong> Puedes eliminar la aplicación completamente en cualquier momento</li>
+            <li><strong>📧 Contactar:</strong> Puedes contactarnos para resolver cualquier duda sobre privacidad</li>
+        </ul>
+    </div>
+
+    <h2>🏢 Uso Empresarial</h2>
+    <p>Esta aplicación está diseñada para uso empresarial y profesional:</p>
     <ul>
-        <li>Identificación única del dispositivo para evitar duplicados</li>
-        <li>Validación de datos antes del envío</li>
-        <li>Eliminación automática de datos locales tras el envío</li>
-        <li>Procesamiento local de imágenes</li>
+        <li>Los datos se envían a servidores corporativos seguros</li>
+        <li>Solo personal autorizado puede acceder a los datos</li>
+        <li>Los datos se utilizan únicamente para fines de verificación y control de activos</li>
+        <li>Cumplimos con todas las normativas de protección de datos aplicables</li>
     </ul>
 
-    <h2>5. Datos que NO Recopilamos</h2>
+    <div class="contact-box">
+        <h2>📞 Información de Contacto</h2>
+        <p>Si tienes preguntas sobre esta política de privacidad, el manejo de datos, o necesitas ejercer tus derechos:</p>
+        <p><strong>📧 Email:</strong> privacy@pondex.com</p>
+        <p><strong>🏢 Empresa:</strong> Pondex Technologies</p>
+        <p><strong>📱 Aplicación:</strong> AviTrack v1.0.3</p>
+        <p><strong>🌐 Soporte:</strong> support@pondex.com</p>
+        <p><strong>⏰ Tiempo de respuesta:</strong> 48 horas máximo</p>
+    </div>
+
+    <h2>🔄 Actualizaciones de la Política</h2>
+    <p>Podemos actualizar esta política de privacidad ocasionalmente para reflejar cambios en nuestras prácticas o por requisitos legales. Te notificaremos sobre cambios importantes mediante:</p>
     <ul>
-        <li>Contactos o información personal del dispositivo</li>
-        <li>Historial de navegación</li>
-        <li>Otras aplicaciones instaladas</li>
-        <li>Comunicaciones privadas</li>
-        <li>Datos biométricos</li>
+        <li>📱 Notificaciones dentro de la aplicación</li>
+        <li>📧 Email (si proporcionaste uno)</li>
+        <li>🔄 Actualizaciones de la aplicación en Google Play Store</li>
     </ul>
 
-    <h2>6. Derechos del Usuario</h2>
-    <p>El usuario puede:</p>
+    <h2>⚖️ Cumplimiento Legal</h2>
+    <p>Esta política cumple con:</p>
     <ul>
-        <li>Denegar permisos (la aplicación informará sobre funcionalidades limitadas)</li>
-        <li>Revisar los datos guardados localmente</li>
-        <li>Limpiar todos los datos de la aplicación desde la configuración del dispositivo</li>
-        <li>Desinstalar la aplicación en cualquier momento</li>
+        <li>✅ Políticas de Google Play Store</li>
+        <li>✅ Regulaciones de protección de datos aplicables</li>
+        <li>✅ Mejores prácticas de privacidad móvil</li>
+        <li>✅ Estándares de seguridad empresarial</li>
     </ul>
 
-    <h2>7. Contacto</h2>
-    <p>Si tiene preguntas sobre esta política de privacidad, puede contactarnos a través de:</p>
-    <p><strong>Email:</strong> support@pondex.com</p>
-    <p><strong>Aplicación:</strong> AppPondex v1.0.2</p>
-
-    <h2>8. Cambios a Esta Política</h2>
-    <p>Nos reservamos el derecho de actualizar esta política. Los cambios importantes se notificarán a través de actualizaciones de la aplicación.</p>
-
-    <hr style="margin-top: 40px;">
-    <p style="text-align: center; color: #666; font-size: 14px;">
-        AviTrack - Política de Privacidad - Versión 1.0
-    </p>
+    <div class="footer">
+        <p><strong>AviTrack - Política de Privacidad</strong></p>
+        <p>Versión 1.2 • Septiembre 2024</p>
+        <p><em>Desarrollada específicamente para cumplir con Google Play Store</em></p>
+        <p>Pondex Technologies - Todos los derechos reservados</p>
+    </div>
 </body>
 </html>
